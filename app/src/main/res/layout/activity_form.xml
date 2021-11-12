@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".UI.FormActivity">
+
+    <EditText
+        android:id="@+id/etfieldthree"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Field Three (write anything)"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etfieldtwo"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etfieldtwo" />
+
+    <EditText
+        android:id="@+id/etfieldtwo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Field Two (write anything)"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etfieldone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etfieldone"
+        app:layout_constraintTop_toBottomOf="@+id/etfieldone" />
+
+    <EditText
+        android:id="@+id/etfieldone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Field One (write anything)"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bSave"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="SAVE"
+        app:layout_constraintEnd_toEndOf="@+id/etfieldthree"
+        app:layout_constraintStart_toStartOf="@+id/etfieldthree"
+        app:layout_constraintTop_toBottomOf="@+id/etfieldthree" />
+</androidx.constraintlayout.widget.ConstraintLayout>
